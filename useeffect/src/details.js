@@ -7,6 +7,7 @@ export default function Details() {
     const { name,id } = useParams()
     console.log("name", name,id)
     const[another,setNext]=useState({});
+    console.log("hi")
 
     const viewData=()=>{
         axios.get("https://swapi.dev/api/people")
@@ -27,6 +28,7 @@ export default function Details() {
     useEffect(() => viewData(), [])
     // useEffect(()=>nextData(),[])
     // useEffect(()=>previousData(),[])
+
 
 
     return (
